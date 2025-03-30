@@ -20,6 +20,11 @@ https://hub.docker.com/repository/docker/k1haa/nvidia-gpu-exporter/general
 - SSH-доступ к хосту с правами root
 - `nvidia-smi` на целевом хосте (обычно в `/bin/nvidia-smi`)
 
+
+## 📊 Визуализация
+- Необходим Prometheus для сбора метрик
+- Необходима Grafana для визуализации
+- Вы можете использовать официальную панель мониторинга Grafana: https://grafana.com/grafana/dashboards/14574-nvidia-gpu-metrics/
 ---
 
 ## 🐳 Docker deploy
