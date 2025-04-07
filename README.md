@@ -1,4 +1,4 @@
-# NVIDIA GPU Exporter
+# Remote NVIDIA GPU Exporter
 
 ![Prometheus+Grafana Integration](https://img.shields.io/badge/Monitoring-Prometheus%20%2B%20Grafana-blue)
 ![Docker Support](https://img.shields.io/badge/Deploy-Docker-green)
@@ -6,13 +6,11 @@
 
 Мониторинг GPU на хостах через SSH с интеграцией в Prometheus/Grafana.
 
-https://hub.docker.com/repository/docker/k1haa/nvidia-gpu-exporter/general
+
 
 ## 📦 Особенности
 - Сбор метрик NVIDIA GPU через SSH-туннель
 - Сбор со всех хостов в одно место
-- Автоматический рестарт сервиса (--restart always)
-- Поддержка современных версий Ubuntu/Debian
 - Оптимизированный вывод метрик
 - Возможность масштабироваться с помощью Docker-Compose/Swarm и других оркестраторов контейнеров.
 
@@ -26,10 +24,10 @@ https://hub.docker.com/repository/docker/k1haa/nvidia-gpu-exporter/general
 ## 📊 Визуализация
 - Prometheus для сбора метрик
 - Grafana для визуализации
-- Официальная панель мониторинга NVIDIA GPU - Grafana: https://grafana.com/grafana/dashboards/14574-nvidia-gpu-metrics/
+- Официальная панель мониторинга NVIDIA GPU - [Grafana](https://grafana.com/grafana/dashboards/14574-nvidia-gpu-metrics/)
 ---
 
-## 🐳 Docker deploy
+## 🐳 Docker deploy [image](https://hub.docker.com/repository/docker/k1haa/nvidia-gpu-exporter/general)
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
